@@ -13,16 +13,16 @@ public class PlayerAnimation : MonoBehaviour
 
     private void Update()
     {
-        // Vector2 direction = playerController.Direction;
+        Vector2 direction = playerController.Direction;
 
-        // bool isMoving = direction.sqrMagnitude > 0.01f;
+        bool isMoving = direction.sqrMagnitude > 0.01f;
 
-        // animator.SetBool("isMoving", isMoving);
+        animator.SetBool("isMoving", isMoving);
 
-        // if (isMoving)
-        // {
-        //     animator.SetFloat("moveX", direction.x);
-        //     animator.SetFloat("moveY", direction.y);
-        // }
+        if (isMoving)
+        {
+            animator.SetFloat("moveX", direction.x);
+            animator.SetFloat("moveY", direction.y);
+        }
     }
 }
