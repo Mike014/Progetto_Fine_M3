@@ -24,11 +24,11 @@ public class PlayerController : MonoBehaviour
 
         Vector2 input = new Vector2(horizontal, vertical);
 
-        // Evita che la diagonale sia più veloce
-        if (input.sqrMagnitude > 1f)
-        {
-            input.Normalize();
-        }
+        // // Evita che la diagonale sia più veloce
+        // if (input.sqrMagnitude > 1f)
+        // {
+        //     input.Normalize();
+        // }
 
         Direction = input;
     }
